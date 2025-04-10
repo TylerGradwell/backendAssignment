@@ -1,0 +1,155 @@
+/*all my code, however i did borrow some of my code from another one of my own projects but i dont think id have to reference this as its mine*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f7f7f7;
+    line-height: 1.6;
+    color: #333333;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 20px;
+}
+/* dashboard heading styles */
+h1 {
+    color: #0a2c5c;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0a2c5c;
+}
+.dashboard {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.dashboard h2 {
+    color: #0a2c5c;
+    font-size: 22px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e1e1;
+}
+/* info styling */
+.information {
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 15px;
+}
+.information p {
+    margin-bottom: 10px;
+    padding: 5px 0px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.information p:last-child {
+    border-bottom: none;
+}
+.information strong {
+    color: #0a2c5c;
+    display: inline-block;
+    width: 150px;
+}
+/* medical info tab highlighted in case there is anything wrong*/
+.medical-info {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+    padding: 10px;
+    border-radius: 4px;
+}
+/* buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.btn {
+    display: inline-block;
+    background-color: #0a2c5c;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0px 5px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #051d3b;
+}
+/* my logout button */
+.logout-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    background-color: #dc3545;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.logout-btn:hover {
+    background-color: #c82333;
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+ul li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border-left: 4px solid #0a2c5c;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+table th, table td {
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    text-align: left;
+}
+table th {
+    background-color: #f1f1f1;
+    color: #0a2c5c;
+}
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        margin: 5px 0px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .dashboard h2 {
+        font-size: 20px;
+    }
+}

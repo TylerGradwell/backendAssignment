@@ -1,0 +1,218 @@
+/*code for homepage. all my own. a lot of it i took from my other projects
+for simplicity, haven't referenced it as its my own work*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0a2c5c;
+    font-weight: 700;
+    font-size: 18px;
+}
+.navbar-brand img {
+    height: 50px;
+    margin-right: 15px;
+}
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #f5c6cb;
+}
+.navbar-headers {
+    display: flex;
+}
+.navbar-headers a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-weight: 500;
+}
+.navbar-headers a:hover {
+    color: #0a2c5c;
+    text-decoration: none;
+}
+main {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+.login-contaainer {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 30px;
+    border-top: 4px solid #0a2c5c;
+}
+h1 {
+    color: #0a2c5c;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.text {
+    color: #666;
+    margin-bottom: 20px;
+}
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.tab {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #666;
+    position: relative;
+    margin-right: 5px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+}
+.tab.active {
+    color: #0a2c5c;
+    background: white;
+    border-bottom: 1px solid white;
+    margin-bottom: -1px;
+}
+.form {
+    display: none;
+}
+.form.active {
+    display: block;
+}
+.field {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 500;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+input:focus {
+    outline: none;
+    border-color: #0a2c5c;
+}
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0a2c5c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn:hover {
+    background-color: #051d3b;
+}
+.link {
+    display: block;
+    margin-top: 15px;
+    color: #0a2c5c;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+}
+.link:hover {
+    color: #051d3b;
+    text-decoration: none;
+}
+footer {
+    background-color: #0a2c5c;
+    color: #fff;
+    padding: 30px 0 20px;
+    margin-top: 40px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.footer-section ul {
+    list-style: none;
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-section a:hover {
+    color: #ddd;
+    text-decoration: none;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+}
+.footer-legal a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.footer-legal a:hover {
+    color: #ddd;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .navbar-headers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .navbar-brand {
+        margin-bottom: 10px;
+    }
+    .navigation {
+        flex-direction: column;
+    }
+    .login-contaainer {
+        width: 90%;
+    }
+}
